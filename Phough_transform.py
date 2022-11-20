@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from matplotlib import pyplot as plt
 #Steps of Hough transform
 #Edge detection, e.g. using the canny edge detector
 #Mapping of edge points to the hough space 
@@ -21,5 +22,7 @@ for line in lines:
 
 
 cv2.imshow("Image",img)
+plt.imshow(img)
+plt.show()
 cv2.waitKey(0)
 cv2.destroyAllWindows()
